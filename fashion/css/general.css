@@ -1,0 +1,82 @@
+/* font import */
+@import url('https://fonts.cdnfonts.com/css/elephant');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* remove default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* variables */
+:root {
+    --fg-color: #224F34;
+    --bg-color: #c2efd4;
+    --padding-main-horizontal: 108px;
+}
+
+/* header */
+header {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em var(--padding-main-horizontal);
+    width: 100%;
+}
+
+.header__container__title {
+    margin-right: 4em;
+}
+
+.header__container__links {
+    display: flex;
+    gap: 2em;
+}
+
+.header__container__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+/* brand title */
+.brand__title {
+    font-family: 'Elephant', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* links */
+a.header__link {
+    all: unset;
+    cursor: pointer;
+}
+
+/* for svg */
+a#header__cart {
+    display: flex;
+    align-items: center;
+}
+
+/* login button */
+a#header__login {
+    padding: 0.5em 2em;
+    border: 2px solid var(--fg-color);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* hover effect for login button */
+a#header__login:hover {
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+}
